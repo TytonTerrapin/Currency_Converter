@@ -53,7 +53,7 @@ def index():
         to_curr = request.form['to_currency']
 
        
-        converted = round(amount * (rates[to_curr] / rates[from_curr]), 2)
+        converted = round(amount * (rates[from_curr] / rates[to_curr]), 2)
 
         return render_template('result.html',
                                amount=amount,
