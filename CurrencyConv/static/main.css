@@ -1,0 +1,99 @@
+/* Body styling */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f0f4f8; /* Light grayish-blue background */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+/* Container for the form */
+.container {
+    background-color: #ffffff; /* White background */
+    padding: 30px 40px;
+    border-radius: 12px;
+    box-shadow: 0 4px 25px rgba(0, 0, 0, 0.1); /* Soft shadow for depth */
+    width: 100%;
+    max-width: 450px; /* Max width for better responsiveness */
+    text-align: center;
+}
+
+/* Header styling */
+h2 {
+    font-size: 28px;
+    color: #2c3e50; /* Dark color for the heading */
+    margin-bottom: 30px;
+    font-weight: 600;
+}
+
+/* Label styling */
+form label {
+    display: block;
+    margin-top: 20px;
+    font-weight: 500;
+    color: #34495e; /* Slightly darker color */
+    font-size: 16px;
+}
+
+/* Input and select fields */
+input[type="number"],
+select {
+    width: 100%;
+    padding: 12px 18px;
+    margin-top: 8px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-sizing: border-box;
+    background-color: #ecf0f1; /* Light background for inputs */
+    font-size: 16px;
+    color: #2c3e50; /* Dark text for readability */
+}
+
+/* Submit button styling */
+input[type="submit"] {
+    margin-top: 25px;
+    padding: 12px 24px;
+    background-color: #3498db; /* Blue color for the button */
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background-color 0.3s ease; /* Smooth transition */
+}
+
+input[type="submit"]:hover {
+    background-color: #2980b9; /* Darker blue on hover */
+}
+
+/* Link styling */
+a {
+    display: inline-block;
+    margin-top: 25px;
+    color: #3498db; /* Blue color for links */
+    text-decoration: none;
+    font-weight: 500;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* Add responsiveness */
+@media (max-width: 480px) {
+    .container {
+        padding: 20px 30px;
+    }
+
+    h2 {
+        font-size: 24px;
+    }
+
+    input[type="number"],
+    select,
+    input[type="submit"] {
+        font-size: 14px;
+    }
+}
